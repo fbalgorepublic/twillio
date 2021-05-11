@@ -8,6 +8,7 @@ const VideoChat = () => {
   const [roomName, setRoomName] = useState("");
   const [room, setRoom] = useState(null);
   const [connecting, setConnecting] = useState(false);
+  const [token, setToken] = useState(null);
 
   const handleUsernameChange = useCallback((event) => {
     setUsername(event.target.value);
